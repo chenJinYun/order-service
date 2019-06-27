@@ -5,7 +5,6 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
 
 //TODO: remove restTemplate implement
-@Component
 public class InventoryClientImpl implements InventoryClient {
 
     @Value("${dmall.inventory.url}")

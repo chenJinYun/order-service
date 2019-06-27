@@ -13,6 +13,7 @@ public class InventoryClientImpl implements InventoryClient {
 
     private RestTemplate restTemplate = new RestTemplate();
 
+    @Override
     public String lock(Lock lock) {
         return restTemplate.postForEntity(inventoryServiceUrl + "/inventories/lock", lock, String.class).getBody();
     }

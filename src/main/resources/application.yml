@@ -32,7 +32,7 @@ spring:
       probability: 1.0
 
   zipkin:
-    base-url: http://zipkin.team-a.cloud.school.thoughtworks.cn
+    base-url: http://zipkin.team-b.cloud.school.thoughtworks.cn
 
 logging:
   level:

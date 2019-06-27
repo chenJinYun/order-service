@@ -26,12 +26,19 @@ spring:
         web-allow-others: true
   flyway:
     locations: "classpath:/db/migration"
+  sleuth:
+    sampler:
+      probability: 1.0
 
   #TODO: change sleuth sample probability
 
-  #TODO: add zipkin configs for local
+  zipkin:
+    base-url: http://zipkin.team-b.cloud.school.thoughtworks.cn
 
-#TODO: change servlet log level to view the logs
+
+logging:
+  level:
+    org.springframework.web: DEBUG
 
 springfox:
   documentation:
